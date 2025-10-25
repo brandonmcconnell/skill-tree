@@ -1,0 +1,41 @@
+{
+  "name": "my-better-t-app",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo build",
+    "check": "biome check --write .",
+    "check-types": "turbo check-types",
+    "dev": "turbo dev",
+    "dev:native": "turbo -F native dev",
+    "dev:web": "turbo -F web dev"
+  },
+  "dependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dotenv": "^17.2.2",
+    "lucide-react": "^0.454.0",
+    "next-themes": "latest",
+    "radix-ui": "latest",
+    "sonner": "latest",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
+    "tw-animate-css": "latest",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.0",
+    "@types/node": "^22",
+    "postcss": "^8.5",
+    "tsdown": "^0.15.5",
+    "turbo": "^2.5.4",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@10.11.0"
+}
